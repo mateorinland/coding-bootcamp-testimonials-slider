@@ -1,5 +1,73 @@
 @import "reset";
 
+$Dark_Blue: hsl(240, 38%, 20%);
+$Grayish_Blue: hsl(240, 18%, 77%);
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+body {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    max-width: 80%;
+}
+
+.button-container {
+    font-size: 0;
+}
+
+.button {
+    padding: 0.7rem 0.9rem;
+    border: none;
+}
+
+.prev {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.next {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.quote {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.name, .position {
+    font-size: 0.9rem;
+}
+
+.name {
+    font-weight: 700;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
